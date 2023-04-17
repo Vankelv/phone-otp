@@ -120,11 +120,12 @@ const App = () => {
 
                     </div>
                     <div className='country'>
+                     
+                      <PhoneInput country={"gh"} value={ph} onChange={setPh} />
+                      <button onClick={onSignup} className='Btn'>
                       {
                         loading && <CgSpinner size={30} className='Spinner' />
                       }
-                      <PhoneInput country={"gh"} value={ph} onChange={setPh} />
-                      <button onClick={onSignup} className='Btn'>
                         <span>send code via sms</span>
                       </button>
                     </div>
