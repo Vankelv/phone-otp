@@ -9,6 +9,7 @@ import 'react-phone-input-2/lib/style.css'
 import { auth } from './firebase.config';
 import { RecaptchaVerifier,  signInWithPhoneNumber } from 'firebase/auth';
 import { toast, Toaster } from "react-hot-toast";
+import Home from './frontend/pages/Home';
 
 
 const App = () => {
@@ -76,9 +77,7 @@ const App = () => {
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
         {
-          user ? <h2 className="text-center text-white font-medium text-2xl">
-            👍Login Success
-          </h2> : (
+          user ? <Home/> : (
             <div>
               <h1 className='text-white'>WELCOME TO PHONE OTP</h1>
 
