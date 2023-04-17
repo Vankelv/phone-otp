@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import OTPInput from "otp-input-react";
 import { BsFillShieldLockFill, BsTelephoneFill } from "react-icons/bs";
 import { CgSpinner } from "react-icons/cg";
+import laundryImage from '../../images/laundry.gif';
+
 import "../../styles/App.css";
 
 import PhoneInput from "react-phone-input-2";
@@ -74,9 +76,12 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div style={{overflowX:'hidden'}}>
       <Row>
-      <Col className="lg-6 col-sm">First column</Col>
+      <Col className="lg-6 col-sm" style={{ backgroundImage: `url(${laundryImage})` }}>
+  {/* content goes here */}
+</Col>
+
   <Col className="App-header lg-6 col-sm">
           <Toaster toastOptions={{ duration: 4000 }} />
           <div id="recaptcha-container"></div>
@@ -84,7 +89,7 @@ const App = () => {
             <Home />
           ) : (
             <div className="login">
-              <h1 className="text-white">WELCOME TO PHONE OTP</h1>
+              <h1 className="text-white">Welcome to our Laundry Service</h1>
 
               {showOTP ? (
                 <>
