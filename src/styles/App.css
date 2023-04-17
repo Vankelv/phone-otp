@@ -9,6 +9,14 @@
   @apply !w-full py-6 !text-base;
   text-align: left !important;
 }
+@media (max-width: 991.98px){
+  .col-sm{
+    flex: none;
+  }
+  .login{
+    padding: 30px;
+  }
+}
 
 .App-header {
   background-color: #036b54;
