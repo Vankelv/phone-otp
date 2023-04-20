@@ -4,19 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import OTPInput from "otp-input-react";
 import { BsFillShieldLockFill, BsTelephoneFill } from "react-icons/bs";
 import { CgSpinner } from "react-icons/cg";
-import laundryImage from '../../images/laundry.gif';
+import laundryImage from './images/laundry.gif';
 
-import "../../styles/App.css";
+import "./styles/App.css";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { auth } from "../../firebase.config";
+import { auth } from "./firebase.config";
 
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
-import Home from "../pages/Home";
+import Home from "./Home";
 
-const App = () => {
+const Login = () => {
   const [otp, setOtp] = useState("");
   const [ph, setPh] = useState("");
   const [loading, setLoading] = useState(false);
@@ -144,4 +144,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Login;
