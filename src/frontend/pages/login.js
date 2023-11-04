@@ -78,7 +78,7 @@ const App = () => {
   return (
     <div style={{overflowX:'hidden'}}>
       <Row>
-      <Col className="lg-6 col-sm" style={{ backgroundImage: `url(${laundryImage})` }}>
+      <Col className="lg-6 col-sm" style={{ backgroundImage: `url(${laundryImage}) ` }}>
   {/* content goes here */}
 </Col>
 
